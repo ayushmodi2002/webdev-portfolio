@@ -118,3 +118,11 @@
     display:block;
     padding:2rem;
 }
+.maincontent{
+    columns:3 15.25rem;
+    column-gap:2rem;
+}
+.photo-test{
+    width:1rem;
+    height:3rem;
+}
