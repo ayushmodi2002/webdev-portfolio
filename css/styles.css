@@ -106,9 +106,11 @@
 
 .test-bg{
     width:100%;
-    height:100vh;
     background-image: url('../images/test-bg.jpg');
     background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 .test-bg-wrapper{
     background-color: rgba(37, 40, 61,0.8);
@@ -127,15 +129,17 @@
     color:#dad2d8;
 }
 .testimonials{
-    display:block;
+
     padding:2rem;
 }
-.testimonials-cont{
-    display: grid;
-    place-items:center;
-    grid-template-columns: 1fr 1fr 1fr;
+.test-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,4fr));
+    padding-top:2rem;
+    grid-gap:1rem;
+    grid-auto-rows: minmax(8rem, 10rem);
 }
-.testimonial-cont{
-    columns:4 2rem;
-    column-gap:3rem;
+.test-items{
+    background-color: greenyellow;
+    border:2px solid red;
 }
