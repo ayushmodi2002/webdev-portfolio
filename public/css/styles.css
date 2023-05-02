@@ -203,13 +203,13 @@
     .test-container{
         display:flex;
         flex-direction: column;
-        padding-inline:1rem;
+        padding-inline:0rem;
     }
     .heading-test{
-        padding-inline:1rem;
+        padding-inline:0rem;
     }
     .subtitle-test{
-        padding-inline:1rem;
+        padding-inline:0rem;
     }
 }
 @media screen and (max-width: 300px){
