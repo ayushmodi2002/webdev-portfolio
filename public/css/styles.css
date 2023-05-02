@@ -194,6 +194,15 @@
     .my-portfolio{
         font-size: 1.1rem;
     }
+    .test-container{
+        padding-inline:1rem;
+    }
+    .heading-test{
+        padding-inline:1rem;
+    }
+    .subtitle-test{
+        padding-inline:1rem;
+    }
 }
 @media screen and (max-width: 300px){
     body{
