@@ -71,11 +71,12 @@
     font-size: 3rem;
 }
 .trail-text{
-    padding:2rem;
-    display:grid;
-    place-items:center;
+    margin:2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size:2rem;
-    font-weight:600;
+    font-weight:400;
 }
 .btns{
     display:flex;
@@ -129,15 +130,15 @@
     color:#dad2d8;
 }
 .testimonials{
-
+    overflow-y: hidden;
     padding:2rem;
 }
 .test-container{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem,4fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem,2fr));
     padding-top:2rem;
     grid-gap:1rem;
-    grid-auto-rows: minmax(8rem, 10rem);
+    grid-auto-rows: minmax(4rem, 5rem);
 }
 .test-items{
     background-color: greenyellow;
