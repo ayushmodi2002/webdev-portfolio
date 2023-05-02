@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,15 +23,14 @@
                 </a>
                 <div class="nav-elements">
                     <ul class="elements">
-                        <li><a href="#">&lt;ABOUT&gt;</a></li>
                         <li><a href="#">&lt;PORTFOLIO&gt;</a></li>
                         <li><a href="#">&lt;TESTIMONIALS&gt;</a></li>
                         <li><a href="#">&lt;PRICING&gt;</a></li>
-                        <li><a href="#">&lt;CONTACT ME&gt;</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
             </section>
-            <section class="hero">
+            <section class="scroll hero" data-section-name="hero">
                 <h3 class="hero-name">&lt;Ayush Modi&gt;</h3>
                 <p class="trail-text">&lt;freelance full stack web developer&gt;</p>
                 <div class="btns">
@@ -44,7 +43,7 @@
     <!-- <section class="portfolio"></section> -->
     <div class="test-bg">
         <div class="test-bg-wrapper">
-            <section class="testimonials">
+            <section class="scroll testimonials" data-section-name="testimonials">
                 <h4 class="heading-test">Testimonials</h4>
                 <h5 class="subtitle-test">Don't believe me? hear it out from my clients</h6>
                 <div class="test-container">
@@ -145,10 +144,8 @@
             <section class="pricing">
                 <div class="price-contianer">
                     <div class="price-items">
-
                     </div>
                 </div>
-
             </section>
         </div>
     </div>
@@ -157,25 +154,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(function() {
-          $.scrollify({
-            section : ".hero",
-            easing: "easeOutExpo",
-            scrollSpeed: 1000,
-            offset : 0,
-          });
+        $(document).ready(function () {
+            $.scrollify({
+                section : ".scroll",
+                sectionName:'section-name',
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                offset : 0,
+                scrollbars: true,
+                setHeights: true,
+                overflowScroll: true,
+                updateHash: true,
+                touchScroll:true,
+            });
         });
-      </script>
-      <script>
-        $(function() {
-          $.scrollify({
-            section : ".testimonials",
-            easing: "easeOutExpo",
-            scrollSpeed: 1000,
-            offset : 0,
-          });
-        });
-        
       </script>
  </body>
 </html>
